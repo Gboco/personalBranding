@@ -10,6 +10,10 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ /*
+ * Colors pallete link https://coolors.co/99e2b4-88d4ab-78c6a3-67b99a-56ab91-469d89-358f80-248277-14746f-036666
+ */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -41,7 +45,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 189, 93, 56;
+  --bs-primary-rgb: 36, 130, 119;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -236,11 +240,11 @@ sup {
 }
 
 a {
-  color: #bd5d38;
+  color: #67b99a;
   text-decoration: underline;
 }
 a:hover {
-  color: #974a2d;
+  color: #036666;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -368,7 +372,9 @@ select {
 select:disabled {
   opacity: 1;
 }
-
+.fa-li{
+  color: #036666;
+}
 [list]::-webkit-calendar-picker-indicator {
   display: none;
 }
@@ -567,13 +573,16 @@ progress {
 .list-inline {
   padding-left: 0;
   list-style: none;
+  color: #036666;
 }
 
 .list-inline-item {
   display: inline-block;
+  color: #036666;
 }
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;
+  color: #036666;
 }
 
 .initialism {
@@ -3026,32 +3035,32 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #000;
-  background-color: #bd5d38;
-  border-color: #bd5d38;
+  background-color: #67b99a;
+  border-color: #67b99a;
 }
 .btn-primary:hover {
   color: #000;
-  background-color: #c77556;
-  border-color: #c46d4c;
+  background-color: #67b99a;
+  border-color: #67b99a;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #000;
-  background-color: #c77556;
-  border-color: #c46d4c;
-  box-shadow: 0 0 0 0.25rem rgba(161, 79, 48, 0.5);
+  background-color: #67b99a;
+  border-color: #67b99a;
+  box-shadow: 0 0 0 0.25rem rgba(103, 185, 154);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #000;
-  background-color: #ca7d60;
-  border-color: #c46d4c;
+  background-color: #67b99a;
+  border-color: #67b99a;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(161, 79, 48, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(103, 185, 154);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #000;
-  background-color: #bd5d38;
-  border-color: #bd5d38;
+  background-color: #67b99a;
+  border-color: #67b99a;
 }
 
 .btn-secondary {
@@ -11377,7 +11386,7 @@ p.lead {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  background-color: #14746F;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
@@ -11387,7 +11396,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: #67B99A;
 }
 
 .dev-icons {
@@ -11403,17 +11412,39 @@ section.resume-section {
   padding-bottom: 2rem;
   max-width: 75rem;
 }
-section.resume-section .resume-section-content {
+
+section.resume-section .resume-section-content  {
   width: 100%;
+
 }
 
+section.interests-section{
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  max-width: 75rem;
+  
+}
 @media (min-width: 768px) {
   section.resume-section {
-    min-height: 100vh;
+    min-height: 90vh;
   }
 }
 @media (min-width: 992px) {
   section.resume-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+
+@media (min-width: 992px) {
+  section.interests-section{
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 2rem;

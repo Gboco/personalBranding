@@ -11415,6 +11415,8 @@ section.resume-section {
 
 section.resume-section .resume-section-content  {
   width: 100%;
+  justify-content: center;
+  flex-direction: column;
 
 }
 
@@ -11449,5 +11451,57 @@ section.interests-section{
     padding-right: 3rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+}
+
+button[type="submit"]{
+  
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  color:rgb(3, 102, 102);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: .3s ease background-color;
+}
+
+button[type="submit"]:hover{
+  background-color: rgb(136, 212, 171);
+}
+
+#status{
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success{
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease  forwards;
+}
+
+#status.error{
+  background-color: rgb(211, 129, 92);
+  color: white;
+  animation: status 4s ease  forwards;
+}
+
+@keyframes status{
+  0%{
+    opacity: 1;
+    pointer-events: all;
+  }
+  90%{
+    opacity: 1;
+    pointer-events: all;
+  }
+  100%{
+    opacity: 0;
+    pointer-events: none;
   }
 }

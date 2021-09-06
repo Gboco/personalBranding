@@ -227,20 +227,23 @@
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
                     <h2 class="mb-5"><i class="fas fa-comments fa-xs"></i> Write me</h2>
-                    <form action="/">
-                      
+                    <form action="https://formspree.io/f/xrgrrogw" method="POST">
                       <h4>Name</h4>
-                      <input class="first-name" type="text" name="name" placeholder="First" />
-                      <input type="text" name="name" placeholder="Last" />
+                      <input class="first-name" type="text" name="firstname" id="firstname" placeholder="First" />
+                      <input type="text" name="lastname" id="lastname"  placeholder="Last" />
                       <h4>Email<span>*</span></h4>
-                      <input type="text" name="email" placeholder="Insert your email" />
+                      <input type="email" name="email" id="email" placeholder="Insert your email" />
                       <h4>Feel free to add any other comments or suggestions:</h4>
-                      <textarea rows="5" cols="50"></textarea>
+                      <textarea name="massage" id="massage" rows="5" cols="50"></textarea>
                       <small><br>* The information given within the Feedback Form will be used for service improvement only and are strictly confidential.</small>
                       <div class="btn-block">
-                        <button type="submit" href="/">Send Feedback</button>
+                     <button type="submit">Send Feedback</button>
                       </div>
+                     <!--<div id="status">Success</div>--> 
                     </form>
+                   
+                </div>
+                
             </section>
             <hr class="m-0" />
         <!-- Bootstrap core JS-->

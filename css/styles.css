@@ -11535,7 +11535,7 @@ button[type="submit"]:hover{
 
 .inputbox {
   position: relative;
-  width: 300px;
+  width: 500px;
   height: 25px;
   margin-bottom: 50px;
 }
@@ -11568,3 +11568,5 @@ button[type="submit"]:hover{
   transform: translateX(-13px) translateY(-35px);
   font-size: 1em;
 }
+
+/*prova animazione*/

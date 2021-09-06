@@ -9,10 +9,12 @@
         <title>Gianmarco-Boco-Portfolio</title>
         <link rel="icon" type="image/x-icon" size="57x57" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/18ac5df4a1.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!--  Normalize CSS  -->
+        <link rel="stylesheet" href="normalize.css">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -223,40 +225,11 @@
                     <h2 class="mb-5"><i class="fas fa-home fa-xs"></i>  Hobby</h2>
                     <p>My hobbies are going to the gym and doing all kinds of sports: basketball, football, tennis and pre-boxing. I like to exercise because it makes me motivated and <b>full of energy</b> in my days.</p>
                     <p class="mb-0">Another hobby of mine is reading, in fact I consider myself a passionate reader especially of the kind of books on <b>personal growth</b>, self-development and finance books. <b>Mindfulness meditation</b> does, but not constantly, when the days get a little stressful.</p>
-                   
+                    <br><h2 class="mb-5"><i class="fas fa-comments fa-xs"></i>Write me</h2>
+                    <form method="get" action="/contact.html">
+                        <button type="submit"><i class="fas fa-envelope"></i> Click me!!</button>
                 </div>
             </section>
-            
-        <!-- Form aggiunta commenti -->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5"><i class="fas fa-comments fa-xs"></i> Write me</h2>
-                    <form action="https://formspree.io/f/xrgrrogw" method="POST">
-                      <div class="inputbox">
-                        <input type="text" name="firstname" id="firstname" required="required" />
-                        <span>Name</span>
-                      </div>
-                      <div class="inputbox">
-                        <input type="text" name="lastname" id="lastname"  required="required" />
-                        <span>Lastname</span>
-                      </div>
-                      <div class="inputbox">
-                        <input type="email" name="email" id="email" required="required" />
-                        <span>Email</span>
-                      </div>
-                      <h4>Feel free to add any other comments or suggestions:</h4>
-                      <textarea name="massage" id="massage" rows="5" cols="50" placeholder="Messagge"></textarea>
-                      <small><br>* The information given within the Feedback Form will be used for service improvement only and are strictly confidential.</small>
-                      <div class="btn-block">
-                        <button type="submit"><i class="fas fa-paper-plane"></i>  Send Feedback</button>
-                      </div>
-                     <!--<div id="status">Success</div>--> 
-                    </form>
-                   
-                </div>
-                
-            </section>
-            <hr class="m-0" />
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

@@ -11505,3 +11505,28 @@ button[type="submit"]:hover{
     pointer-events: none;
   }
 }
+
+#firstname{
+  margin: 0 auto;
+  border: none; /* <-- This thing here */
+  border:solid 1px #ccc;
+  border-radius: 10px;
+}
+#lastname{
+  margin: 0 auto;
+  border: none; /* <-- This thing here */
+  border:solid 1px #ccc;
+  border-radius: 10px;
+}
+#email{
+  margin: 0 auto;
+  border: none; /* <-- This thing here */
+  border:solid 1px #ccc;
+  border-radius: 10px;
+}
+#massage{
+  margin: 0 auto;
+  border: none; /* <-- This thing here */
+  border:solid 1px #ccc;
+  border-radius: 10px;
+}

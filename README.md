@@ -9,3 +9,5 @@ icons pressi da: https://fontawesome.com/
 normalize.css: https://necolas.github.io/normalize.css/
 
 bootstrap core-js: https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js
+
+per far funzionare il form ho usato: https://formspree.io/f/xrgrrogw

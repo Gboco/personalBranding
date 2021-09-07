@@ -71,26 +71,26 @@
           <div class="resume-section-content">
               <h1 class="mb-5"><i class="fas fa-comments fa-xs"></i> Write me</h1>
               <h5>Questo form è fatto per prova per testare boot</h5>
-              <form action="https://formspree.io/f/xrgrrogw" method="POST"></form>
-                <div class="mb-3">
+              <form action="https://formspree.io/f/xrgrrogw" method="POST">
+                <div class="input-box">
                   <div class="col-auto">
                     <label class="sr-only" for="inlineFormInputGroup">Username</label>
                     <div class="input-group mb-2">
                       <div class="input-group-prepend">
                         <div class="input-group-text">@</div>
                       </div>
-                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Username" required="required">
                     </div>
                   </div>
                 </div>
-                <div class="mb-3">
+                <div class="input-box">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="text" name="email" class="form-control" id="email" required="required" >
                   <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlTextarea1">Feel free to add any other comments or suggestions:</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <textarea class="form-control" name="massage" id="massage" rows="3" required="required"></textarea>
                 </div>
                 <div class="btn-block">
                   <button type="submit"><i class="fas fa-paper-plane"></i>  Send Feedback</button>

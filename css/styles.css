@@ -72,7 +72,9 @@
 *::after {
   box-sizing: border-box;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
